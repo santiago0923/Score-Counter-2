@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/c"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+
+        <TextView
+            android:id="@+id/editTextA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/marginTop"
+            android:padding="@dimen/padding"
+            android:text="Team A"
+            android:textSize="@dimen/largeFont"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margins"
+            android:text="0"
+            android:textAlignment="center"
+            android:ems="3"
+            android:textSize="@dimen/medFont"
+            android:textStyle="bold"
+            android:padding="@dimen/padding"
+            android:textColor="@android:color/holo_red_light"
+
+            />
+
+        <Button
+            android:id="@+id/buttonA"
+            android:text="Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margins"
+            android:onClick="addOnePointForTeamA"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:text="Reset"
+        android:textSize="10sp"
+        android:onClick="reset"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1
+"
+        >
+
+
+        <TextView
+            android:id="@+id/editTextB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:layout_marginBottom="@dimen/margins"
+            android:layout_gravity="center"
+            android:text="Team B"
+            android:textSize="@dimen/largeFont"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margins"
+            android:text="0"
+            android:textAlignment="center"
+            android:ems="3"
+            android:textSize="@dimen/medFont"
+            android:textStyle="bold"
+            android:padding="@dimen/padding"
+           android:textColor="@android:color/holo_red_light"
+
+            />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:text="Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:onClick="addOnePointForTeamB"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
